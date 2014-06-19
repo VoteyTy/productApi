@@ -1,0 +1,1681 @@
+2014-05-19 09:00:30 Error: Fatal Error (4): syntax error, unexpected '(', expecting '{' in [/Applications/MAMP/htdocs/cakephp-2.5.1/app/Model/Post.php, line 32]
+2014-05-19 09:00:30 Error: [FatalErrorException] syntax error, unexpected '(', expecting '{'
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 32, Array)
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 32, Array)
+#3 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-19 09:02:09 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: NO)',
+  'enabled' => true,
+)
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Model/Model.php(3479): ConnectionManager::getDataSource('default')
+#3 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Model/Model.php(1128): Model->setDataSource('default')
+#4 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Model/Model.php(3501): Model->setSource('posts')
+#5 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Model/Model.php(2905): Model->getDataSource()
+#6 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Model/Model.php(2877): Model->_readDataSource('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp-2.5.1/app/Controller/PostsController.php(42): Model->find('all')
+#8 [internal function]: PostsController->index()
+#9 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#10 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-05-19 09:03:07 Error: [MissingHelperException] Helper class CssHelper could not be found.
+Exception Attributes: array (
+  'class' => 'CssHelper',
+  'plugin' => false,
+)
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/View/View.php(886): HelperCollection->load('Css', Array)
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Controller/Controller.php(1241): View->__construct(Object(PostsController))
+#3 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Controller/Controller.php(940): Controller->_getViewObject()
+#4 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#5 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#6 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-05-19 09:05:07 Error: [MissingHelperException] Helper class CssHelper could not be found.
+Exception Attributes: array (
+  'class' => 'CssHelper',
+  'plugin' => false,
+)
+Request URL: /cakephp-2.5.1/Posts
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/View/View.php(886): HelperCollection->load('Css', Array)
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Controller/Controller.php(1241): View->__construct(Object(PostsController))
+#3 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Controller/Controller.php(940): Controller->_getViewObject()
+#4 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#5 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#6 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-05-19 09:05:17 Error: [MissingHelperException] Helper class CssHelper could not be found.
+Exception Attributes: array (
+  'class' => 'CssHelper',
+  'plugin' => false,
+)
+Request URL: /cakephp-2.5.1/posts
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/View/View.php(886): HelperCollection->load('Css', Array)
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Controller/Controller.php(1241): View->__construct(Object(PostsController))
+#3 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Controller/Controller.php(940): Controller->_getViewObject()
+#4 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#5 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#6 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-05-19 09:09:38 Error: Fatal Error (4): syntax error, unexpected '<' in [/Applications/MAMP/htdocs/cakephp-2.5.1/app/View/Posts/add.ctp, line 10]
+2014-05-19 09:09:38 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /cakephp-2.5.1/posts/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 10, Array)
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 10, Array)
+#3 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-19 09:09:45 Error: Fatal Error (4): syntax error, unexpected '<' in [/Applications/MAMP/htdocs/cakephp-2.5.1/app/View/Posts/add.ctp, line 10]
+2014-05-19 09:09:45 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /cakephp-2.5.1/posts/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 10, Array)
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 10, Array)
+#3 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-06 04:13:32 Error: [MissingControllerException] Controller class ViewController could not be found.
+Exception Attributes: array (
+  'class' => 'ViewController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/view
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-06 04:13:48 Error: [MissingControllerException] Controller class IndexController could not be found.
+Exception Attributes: array (
+  'class' => 'IndexController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/index
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-06 04:16:04 Error: Fatal Error (1): Method name must be a string in [/Applications/MAMP/htdocs/cakephp-2.5.1/app/Controller/UsersController.php, line 7]
+2014-06-06 04:16:04 Error: [FatalErrorException] Method name must be a string
+Request URL: /cakephp-2.5.1/users
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Method name mus...', '/Applications/M...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Method name mus...', '/Applications/M...', 7, Array)
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Method name mus...', '/Applications/M...', 7, Array)
+#3 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-06 04:16:04 Error: Fatal Error (1): Method name must be a string in [/Applications/MAMP/htdocs/cakephp-2.5.1/app/Controller/UsersController.php, line 7]
+2014-06-06 04:16:04 Error: [FatalErrorException] Method name must be a string
+Request URL: /cakephp-2.5.1/users
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Method name mus...', '/Applications/M...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Method name mus...', '/Applications/M...', 7, Array)
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Method name mus...', '/Applications/M...', 7, Array)
+#3 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-06 04:17:13 Error: Fatal Error (1): Method name must be a string in [/Applications/MAMP/htdocs/cakephp-2.5.1/app/Controller/UsersController.php, line 7]
+2014-06-06 04:17:13 Error: [FatalErrorException] Method name must be a string
+Request URL: /cakephp-2.5.1/users/index
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Method name mus...', '/Applications/M...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Method name mus...', '/Applications/M...', 7, Array)
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Method name mus...', '/Applications/M...', 7, Array)
+#3 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-06 04:17:13 Error: Fatal Error (1): Method name must be a string in [/Applications/MAMP/htdocs/cakephp-2.5.1/app/Controller/UsersController.php, line 7]
+2014-06-06 04:17:13 Error: [FatalErrorException] Method name must be a string
+Request URL: /cakephp-2.5.1/users/index
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Method name mus...', '/Applications/M...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Method name mus...', '/Applications/M...', 7, Array)
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Method name mus...', '/Applications/M...', 7, Array)
+#3 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-06 04:20:08 Error: Fatal Error (1): Method name must be a string in [/Applications/MAMP/htdocs/cakephp-2.5.1/app/Controller/UsersController.php, line 7]
+2014-06-06 04:20:08 Error: [FatalErrorException] Method name must be a string
+Request URL: /cakephp-2.5.1/users/index
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Method name mus...', '/Applications/M...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Method name mus...', '/Applications/M...', 7, Array)
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Method name mus...', '/Applications/M...', 7, Array)
+#3 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-06 04:20:18 Error: Fatal Error (1): Method name must be a string in [/Applications/MAMP/htdocs/cakephp-2.5.1/app/Controller/UsersController.php, line 7]
+2014-06-06 04:20:18 Error: [FatalErrorException] Method name must be a string
+Request URL: /cakephp-2.5.1/users/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Method name mus...', '/Applications/M...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Method name mus...', '/Applications/M...', 7, Array)
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Method name mus...', '/Applications/M...', 7, Array)
+#3 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-06 04:20:18 Error: Fatal Error (1): Method name must be a string in [/Applications/MAMP/htdocs/cakephp-2.5.1/app/Controller/UsersController.php, line 7]
+2014-06-06 04:20:18 Error: [FatalErrorException] Method name must be a string
+Request URL: /cakephp-2.5.1/users/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Method name mus...', '/Applications/M...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Method name mus...', '/Applications/M...', 7, Array)
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Method name mus...', '/Applications/M...', 7, Array)
+#3 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-09 11:23:31 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-09 11:23:45 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/User/index
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-09 11:25:57 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/User/index
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-09 11:26:07 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-09 11:27:29 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-09 11:27:29 Error: Fatal Error (1): Class 'AppController' not found in [/Applications/MAMP/htdocs/cakephp-2.5.1/app/Controller/Controller.php, line 2]
+2014-06-09 11:27:29 Error: [FatalErrorException] Class 'AppController' not found
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'AppContr...', '/Applications/M...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'AppContr...', '/Applications/M...', 2, Array)
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'AppContr...', '/Applications/M...', 2, Array)
+#3 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-09 11:29:13 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /RestfulAPI-CakePHP/cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-09 11:29:20 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /RestfulAPI-CakePHP/cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-09 11:29:50 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /RestfulAPI-CakePHP/cakephp-2.5.1/Recipes/xml
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-09 11:29:53 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /RestfulAPI-CakePHP/cakephp-2.5.1/Recipes/xml
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-09 11:32:23 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /RestfulAPI-CakePHP/cakephp-2.5.1/Recipes/xml
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-09 11:32:30 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-09 11:32:40 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /RestfulAPI-CakePHP/cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-09 11:35:07 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /RestfulAPI-CakePHP/cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-09 11:40:39 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 03:21:45 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 03:29:27 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/users
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 03:34:43 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 03:35:07 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/users/index
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 03:51:44 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/users/index
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 03:52:36 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/users/index
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 04:11:54 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/users/index
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 04:12:02 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 04:12:24 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 04:12:35 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 04:30:48 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 04:31:01 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/Recipes/index
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 04:35:28 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/Recipes?userId=1
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 04:35:54 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/Recipes/1.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 04:36:05 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/Recipes?userId=1
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 04:36:12 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/Recipes.json?userId=1
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 04:36:59 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/Recipes/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 04:51:33 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 04:58:07 Error: Fatal Error (4): syntax error, unexpected end of file in [/Applications/MAMP/htdocs/cakephp-2.5.1/app/Config/routes.php, line 14]
+2014-06-10 04:58:07 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 14, Array)
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 14, Array)
+#3 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-10 05:00:26 Error: Fatal Error (4): syntax error, unexpected end of file in [/Applications/MAMP/htdocs/cakephp-2.5.1/app/Config/routes.php, line 14]
+2014-06-10 05:00:26 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 14, Array)
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 14, Array)
+#3 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-10 05:00:55 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 05:01:38 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 05:04:10 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 05:04:20 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 05:05:10 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 05:05:10 Error: Fatal Error (1): Class 'Xml' not found in [/Applications/MAMP/htdocs/cakephp-2.5.1/app/View/Errors/missing_controller.ctp, line 4]
+2014-06-10 05:05:10 Error: [FatalErrorException] Class 'Xml' not found
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Xml' not...', '/Applications/M...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Xml' not...', '/Applications/M...', 4, Array)
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'Xml' not...', '/Applications/M...', 4, Array)
+#3 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-10 05:05:47 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 05:05:47 Error: Fatal Error (1): Class 'Xml' not found in [/Applications/MAMP/htdocs/cakephp-2.5.1/app/View/Errors/missing_controller.ctp, line 4]
+2014-06-10 05:05:47 Error: [FatalErrorException] Class 'Xml' not found
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Xml' not...', '/Applications/M...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Xml' not...', '/Applications/M...', 4, Array)
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'Xml' not...', '/Applications/M...', 4, Array)
+#3 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-10 05:05:57 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 05:06:14 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp-2.5.1/app/View/Recipes/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp-2.5.1/app/View/Recipes/index.ctp',
+)
+Request URL: /cakephp-2.5.1/Recipes/index
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#4 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-10 05:06:35 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp-2.5.1/app/View/Recipes/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp-2.5.1/app/View/Recipes/index.ctp',
+)
+Request URL: /cakephp-2.5.1/Recipes
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#4 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-10 05:06:41 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 05:07:23 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp-2.5.1/app/View/Recipes/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp-2.5.1/app/View/Recipes/index.ctp',
+)
+Request URL: /cakephp-2.5.1/Recipes/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#4 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-10 05:08:33 Error: [Exception] String could not be parsed as XML
+Request URL: /cakephp-2.5.1/Recipes/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Utility/Xml.php(221): SimpleXMLElement->__construct('<?xml version="...')
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/app/View/Recipes/index.ctp(2): Xml::fromArray(Array)
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/View/View.php(948): include('/Applications/M...')
+#3 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/View/View.php(910): View->_evaluate('/Applications/M...', Array)
+#4 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/View/View.php(471): View->_render('/Applications/M...')
+#5 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#6 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#7 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#8 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-06-10 05:34:33 Error: [MissingActionException] Action RecipesController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => 'add',
+)
+Request URL: /cakephp-2.5.1/Recipes/add.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-10 05:35:32 Error: [MissingActionException] Action RecipesController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => '1',
+)
+Request URL: /cakephp-2.5.1/Recipes/1.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-10 05:36:19 Error: [MissingActionException] Action RecipesController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => '1',
+)
+Request URL: /cakephp-2.5.1/Recipes/1.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-10 05:37:43 Error: [MissingActionException] Action RecipesController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => 'add',
+)
+Request URL: /cakephp-2.5.1/Recipes/add.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-10 05:38:27 Error: [MissingActionException] Action RecipesController::2() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => '2',
+)
+Request URL: /cakephp-2.5.1/Recipes/2.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-10 05:39:23 Error: [MissingActionException] Action RecipesController::3() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => '3',
+)
+Request URL: /cakephp-2.5.1/Recipes/3.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-10 08:12:59 Error: [MissingActionException] Action RecipesController::5() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => '5',
+)
+Request URL: /cakephp-2.5.1/Recipes/5.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-10 09:14:16 Error: [MissingActionException] Action RecipesController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => '1',
+)
+Request URL: /cakephp-2.5.1/Recipes/1.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-10 09:15:28 Error: [MissingActionException] Action RecipesController::3() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => '3',
+)
+Request URL: /cakephp-2.5.1/Recipes/3.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-10 09:20:19 Error: [MissingActionException] Action RecipesController::3() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => '3',
+)
+Request URL: /cakephp-2.5.1/Recipes/3.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-10 09:20:21 Error: [MissingActionException] Action RecipesController::3() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => '3',
+)
+Request URL: /cakephp-2.5.1/Recipes/3.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 05:08:16 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-11 05:08:29 Error: [MissingControllerException] Controller class RecipeController could not be found.
+Exception Attributes: array (
+  'class' => 'RecipeController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/Recipe
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-11 05:08:41 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-11 09:06:27 Error: [MissingActionException] Action RecipesController::recieps() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => 'recieps',
+)
+Request URL: /cakephp-2.5.1/Recipes/recieps.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 09:07:37 Error: [MissingActionException] Action RecipesController::recipes() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => 'recipes',
+)
+Request URL: /cakephp-2.5.1/Recipes/recipes.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 09:09:29 Error: [MissingActionException] Action RecipesController::recipes() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => 'recipes',
+)
+Request URL: /cakephp-2.5.1/Recipes/recipes.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 09:12:15 Error: [MissingActionException] Action RecipesController::recipes() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => 'recipes',
+)
+Request URL: /cakephp-2.5.1/Recipes/recipes.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 09:13:24 Error: [MissingActionException] Action RecipesController::recipes() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => 'recipes',
+)
+Request URL: /cakephp-2.5.1/Recipes/recipes.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 09:16:21 Error: [MissingActionException] Action RecipesController::recipes() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => 'recipes',
+)
+Request URL: /cakephp-2.5.1/Recipes/recipes.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 09:17:02 Error: [MissingActionException] Action RecipesController::recipes() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => 'recipes',
+)
+Request URL: /cakephp-2.5.1/Recipes/recipes.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 09:18:48 Error: [MissingActionException] Action RecipesController::recipes() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => 'recipes',
+)
+Request URL: /cakephp-2.5.1/Recipes/recipes.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 09:28:07 Error: [MissingActionException] Action RecipesController::recipes() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => 'recipes',
+)
+Request URL: /cakephp-2.5.1/Recipes/recipes.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 09:28:08 Error: [MissingActionException] Action RecipesController::recipes() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => 'recipes',
+)
+Request URL: /cakephp-2.5.1/Recipes/recipes.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 09:30:38 Error: [MissingActionException] Action RecipesController::recipes() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => 'recipes',
+)
+Request URL: /cakephp-2.5.1/Recipes/recipes.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 09:31:19 Error: [MissingActionException] Action RecipesController::recipes() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => 'recipes',
+)
+Request URL: /cakephp-2.5.1/Recipes/recipes.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-13 04:43:40 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-13 04:43:51 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-13 04:44:05 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-13 04:45:01 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-13 04:50:09 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-13 04:50:21 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-13 04:54:44 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-13 04:55:43 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-13 04:55:57 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-13 04:57:43 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-13 04:57:56 Error: [MissingActionException] Action RecipesController::19() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => '19',
+)
+Request URL: /cakephp-2.5.1/Recipes/19.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-13 05:01:21 Error: [MissingActionException] Action RecipesController::19() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => '19',
+)
+Request URL: /cakephp-2.5.1/Recipes/19.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-13 05:01:35 Error: [MissingActionException] Action RecipesController::20() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => '20',
+)
+Request URL: /cakephp-2.5.1/Recipes/20.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-13 05:01:57 Error: [MissingActionException] Action RecipesController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => '1',
+)
+Request URL: /cakephp-2.5.1/Recipes/1.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-13 05:03:15 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-13 05:03:53 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-13 05:05:06 Error: [MissingActionException] Action RecipesController::20() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => '20',
+)
+Request URL: /cakephp-2.5.1/Recipes/20.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-13 05:05:18 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-13 05:05:32 Error: [MissingActionException] Action RecipesController::20() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => '20',
+)
+Request URL: /cakephp-2.5.1/Recipes/20.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-13 05:07:30 Error: [MissingActionException] Action RecipesController::20() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => '20',
+)
+Request URL: /cakephp-2.5.1/Recipes/20.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-13 05:07:39 Error: [MissingActionException] Action RecipesController::20() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => '20',
+)
+Request URL: /cakephp-2.5.1/Recipes/20.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-13 05:09:52 Error: [MissingActionException] Action RecipesController::19() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => '19',
+)
+Request URL: /cakephp-2.5.1/Recipes/19.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-13 05:14:01 Error: [MissingActionException] Action RecipesController::19() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => '19',
+)
+Request URL: /cakephp-2.5.1/Recipes/19.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-13 05:15:41 Error: [MissingActionException] Action RecipesController::19() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => '19',
+)
+Request URL: /cakephp-2.5.1/Recipes/19.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-13 05:16:58 Error: [MissingActionException] Action RecipesController::19() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecipesController',
+  'action' => '19',
+)
+Request URL: /cakephp-2.5.1/Recipes/19.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp-2.5.1/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(RecipesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-13 05:18:52 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-13 06:07:48 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-13 06:25:56 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-13 06:42:23 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-13 08:21:09 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-13 08:22:08 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-13 08:22:36 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-13 08:22:56 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-13 08:24:01 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-13 08:29:04 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-13 08:30:51 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-13 08:31:43 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-13 08:31:53 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-13 08:32:44 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-16 03:25:38 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-16 03:26:32 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.5.1/user
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp-2.5.1/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-17 09:12:24 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /simple-project-api/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-17 09:12:53 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /simple-project-api/user.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-17 09:15:24 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /simple-project-api/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-17 09:15:24 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /simple-project-api/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-17 09:16:08 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Applications/MAMP/htdocs/simple-project-api/app/Controller/UsersController.php, line 19]
+2014-06-17 09:16:08 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /simple-project-api/users.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 19, Array)
+#2 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 19, Array)
+#3 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-17 09:16:33 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Applications/MAMP/htdocs/simple-project-api/app/Controller/UsersController.php, line 19]
+2014-06-17 09:16:33 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /simple-project-api/users.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 19, Array)
+#2 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 19, Array)
+#3 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-17 09:16:45 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Applications/MAMP/htdocs/simple-project-api/app/Controller/UsersController.php, line 19]
+2014-06-17 09:16:45 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /simple-project-api/users/1.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 19, Array)
+#2 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 19, Array)
+#3 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-17 09:16:46 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Applications/MAMP/htdocs/simple-project-api/app/Controller/UsersController.php, line 19]
+2014-06-17 09:16:46 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /simple-project-api/users/1.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 19, Array)
+#2 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 19, Array)
+#3 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-17 09:16:56 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Applications/MAMP/htdocs/simple-project-api/app/Controller/UsersController.php, line 19]
+2014-06-17 09:16:56 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /simple-project-api/users/1.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 19, Array)
+#2 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 19, Array)
+#3 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-17 09:17:55 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /simple-project-api/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-17 09:18:26 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /simple-project-api/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-17 09:21:04 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /simple-project-api/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-17 09:21:30 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /simple-project-api/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-17 09:23:29 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /simple-project-api/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-17 09:32:51 Error: [MissingControllerException] Controller class ErrorsController could not be found.
+Exception Attributes: array (
+  'class' => 'ErrorsController',
+  'plugin' => NULL,
+)
+Request URL: /simple-project-api/errors.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-17 09:35:08 Error: [MissingActionException] Action UsersController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => '1',
+)
+Request URL: /simple-project-api/users/1.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/simple-project-api/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-17 09:36:49 Error: [MissingActionException] Action UsersController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => '1',
+)
+Request URL: /simple-project-api/users/1.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/simple-project-api/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-17 09:38:02 Error: [MissingActionException] Action UsersController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => '1',
+)
+Request URL: /simple-project-api/users/1.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/simple-project-api/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-17 09:40:40 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /simple-project-api/user/1.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-17 09:48:06 Error: [MissingActionException] Action UsersController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => '1',
+)
+Request URL: /simple-project-api/users/1.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/simple-project-api/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-17 09:48:36 Error: [MissingActionException] Action UsersController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => '1',
+)
+Request URL: /simple-project-api/users/1.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/simple-project-api/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-17 09:52:37 Error: [MissingActionException] Action UsersController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => '1',
+)
+Request URL: /simple-project-api/users/1.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/simple-project-api/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-17 09:56:06 Error: [MissingActionException] Action UsersController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => '1',
+)
+Request URL: /simple-project-api/users/1.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/simple-project-api/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-17 09:58:14 Error: [MissingActionException] Action UsersController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => '1',
+)
+Request URL: /simple-project-api/users/1.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/simple-project-api/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-17 11:31:42 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /simple-project-api/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-17 11:34:49 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'login' at line 1
+Request URL: /simple-project-api/users/login.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('login', Array)
+#2 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('login', Array, Array)
+#3 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('login', Array, Array)
+#4 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Model.php(800): DboSource->query('login', Array, Object(User))
+#5 /Applications/MAMP/htdocs/simple-project-api/app/Controller/UsersController.php(28): Model->__call('login', Array)
+#6 /Applications/MAMP/htdocs/simple-project-api/app/Controller/UsersController.php(28): User->login('vina', '123')
+#7 [internal function]: UsersController->login()
+#8 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/simple-project-api/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-06-17 11:35:01 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'login' at line 1
+Request URL: /simple-project-api/users/login.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('login', Array)
+#2 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('login', Array, Array)
+#3 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('login', Array, Array)
+#4 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Model.php(800): DboSource->query('login', Array, Object(User))
+#5 /Applications/MAMP/htdocs/simple-project-api/app/Controller/UsersController.php(28): Model->__call('login', Array)
+#6 /Applications/MAMP/htdocs/simple-project-api/app/Controller/UsersController.php(28): User->login('vina', '123')
+#7 [internal function]: UsersController->login()
+#8 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/simple-project-api/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-06-17 11:44:32 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'login' at line 1
+Request URL: /simple-project-api/users/login.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('login', Array)
+#2 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('login', Array, Array)
+#3 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('login', Array, Array)
+#4 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Model.php(800): DboSource->query('login', Array, Object(User))
+#5 /Applications/MAMP/htdocs/simple-project-api/app/Controller/UsersController.php(28): Model->__call('login', Array)
+#6 /Applications/MAMP/htdocs/simple-project-api/app/Controller/UsersController.php(28): User->login('vina', '123')
+#7 [internal function]: UsersController->login()
+#8 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/simple-project-api/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-06-19 05:16:22 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Request URL: /simple-project-api/users/add.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `pr...')
+#3 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Model.php(1834): DboSource->create(Object(User), Array, Array)
+#4 /Applications/MAMP/htdocs/simple-project-api/app/Controller/UsersController.php(47): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/simple-project-api/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-06-19 05:32:05 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Request URL: /simple-project-api/users/add.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `pr...')
+#3 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Model.php(1834): DboSource->create(Object(User), Array, Array)
+#4 /Applications/MAMP/htdocs/simple-project-api/app/Controller/UsersController.php(47): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/simple-project-api/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-06-19 05:33:45 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Request URL: /simple-project-api/users/add.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `pr...')
+#3 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Model.php(1834): DboSource->create(Object(User), Array, Array)
+#4 /Applications/MAMP/htdocs/simple-project-api/app/Controller/UsersController.php(47): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/simple-project-api/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-06-19 05:43:36 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Request URL: /simple-project-api/users.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `pr...')
+#3 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Model.php(1834): DboSource->create(Object(User), Array, Array)
+#4 /Applications/MAMP/htdocs/simple-project-api/app/Controller/UsersController.php(47): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/simple-project-api/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-06-19 05:44:36 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Request URL: /simple-project-api/users.json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `pr...')
+#3 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Model/Model.php(1834): DboSource->create(Object(User), Array, Array)
+#4 /Applications/MAMP/htdocs/simple-project-api/app/Controller/UsersController.php(47): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/MAMP/htdocs/simple-project-api/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/simple-project-api/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
