@@ -42,21 +42,21 @@
 
          public function add(){
 
-        $requests = $this->request->data ;
+            $requests = $this->request->data ;
 
-        if ($this->User->save($requests)) {
+            if ($this->User->save($requests)) {
 
-            $id = $this->User->getInsertID();
+                $id = $this->User->getInsertID();
             //$message = "Successfully";
-            $message= $this->User->findById($id);
+                $message= $this->User->findById($id);
             
-        }else $message= 'Error';
+            }else $message= 'Error';
 
-        $this->set(array
+            $this->set(array
             ('message'=>$message,
             '_serialize'=>array('message'))
             );
 
-    }
+        }
 	
 	} 
