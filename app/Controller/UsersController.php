@@ -58,5 +58,21 @@
             );
 
         }
+        public function edit($id){
+
+            $request = $this->request->data;
+
+            $this->User->id = $id;
+            $this->User->Save($request);
+
+            $findId = $this->User->findById($id);
+
+            $this->set(array(
+                    'message'=>$findId,
+                    '_serialize'=>array('message')
+                ));
+
+
+        }
 	
 	} 
