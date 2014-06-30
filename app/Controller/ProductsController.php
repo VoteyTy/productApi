@@ -9,6 +9,15 @@
                 '_serialize' => array('products')
             ));
         }
+        public function view($id)
+        {
+            $products = $this->Product->findById($id); 
+            $this->set(array(
+                'products' => $products,
+                '_serialize' => array('products')
+             ));
+
+        }
         public function add() {
             if ($this->request->is('post')) {
                 //print_r($this->request->data);
@@ -59,5 +68,50 @@
                 'message' => $message,
                 '_serialize' => array('message')
             ));
+        }
+
+        public function edit($id)
+        {
+            if ($this->request->is('post'))
+            {
+                $findId = '';
+                if (isset($_FILES['file']))// file is name we can put whatever we want
+                {
+                    //print_r($this->request->data);
+                    // $movefile = move_uploaded_file($_FILES['file']["tmp_name"], WWW_ROOT.DS.'product'.DS.$this->request->data['image']);
+                    // if ($movefile) 
+                    // {
+                    //    unlink(WWW_ROOT.'product'.DS.$this->data['image']);
+                    // }else
+                    // {
+                    // move_uploaded_file($_FILES['file']["tmp_name"], WWW_ROOT.DS.'product'.DS.$this->request->data['image']);
+                    //   $message = 'success';   
+                    // }
+                    // $sql = "select image from products where id =".$id;
+                    // $product = $this->Product->query($sql);
+                    // print_r($product);
+
+                    $product = $this->Product->find('first', array('conditions'=>array('Product.id'=>$id), 'fields'=>array('Product.image')));
+                    print_r($product);
+
+                      unlink(WWW_ROOT.'product'.DS.$product['Product']['image']); 
+
+                     move_uploaded_file($_FILES['file']["tmp_name"], WWW_ROOT.DS.'product'.DS.$this->request->data['image']);
+                }
+                $request = $this->request->data;
+                $this->Product->id = $id;
+                $this->Product->Save($request);
+                $findId = $this->Product->findById($id);
+
+                $this->set(array(
+                        'message'=>$findId,
+                        '_serialize'=>array('message')
+                    ));
+            }
+            else if ($this->request->is('put'))
+            {
+                
+                $message = 'Error';
+            }
         }
     }
